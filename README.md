@@ -1,5 +1,7 @@
 # Frontend Mentor - Shortly URL shortening API Challenge
 
+View here [https://url-shortener-omega.now.sh/](https://url-shortener-omega.now.sh/)
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
