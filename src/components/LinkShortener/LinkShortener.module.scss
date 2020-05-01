@@ -1,6 +1,9 @@
 .container {
   background-color: var(--primary-dark);
   background-image: url("../../assets/images/bg-shorten-desktop.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 2em;
   position: absolute;
   left: 50%;
@@ -18,10 +21,31 @@
       border-radius: 0.4em;
       outline: none;
       padding: 0 1.25em;
+      height: 3rem;
     }
 
     button {
-        margin-left: 1em;
+      margin-left: 1em;
+      white-space: nowrap;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+
+    form {
+      flex-direction: column;
+      input {
+        flex: auto;
+        margin-bottom: 3em;
+      }
+
+      button {
+        height: 3rem;
+        margin-left: 0em;
+      }
     }
   }
 }

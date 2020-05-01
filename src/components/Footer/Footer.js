@@ -20,13 +20,13 @@ function Footer() {
           <h1>Features</h1>
           <ul>
             <li>
-              <a href="#">Link Shortening</a>
+              <a href="/">Link Shortening</a>
             </li>
             <li>
-              <a href="#">Branded Links</a>
+              <a href="/">Branded Links</a>
             </li>
             <li>
-              <a href="#">Analytics</a>
+              <a href="/">Analytics</a>
             </li>
           </ul>
         </div>
@@ -34,13 +34,13 @@ function Footer() {
           <h1>Resources</h1>
           <ul>
             <li>
-              <a href="#">Blog</a>
+              <a href="/">Blog</a>
             </li>
             <li>
-              <a href="#">Developers</a>
+              <a href="/">Developers</a>
             </li>
             <li>
-              <a href="#">Support</a>
+              <a href="/">Support</a>
             </li>
           </ul>
         </div>
@@ -48,38 +48,38 @@ function Footer() {
           <h1>Company</h1>
           <ul>
             <li>
-              <a href="#">About</a>
+              <a href="/">About</a>
             </li>
             <li>
-              <a href="#">Our Team</a>
+              <a href="/">Our Team</a>
             </li>
             <li>
-              <a href="#">Careers</a>
+              <a href="/">Careers</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="/">Contact</a>
             </li>
           </ul>
         </div>
         <div className={styles.social}>
           <ul>
             <li>
-              <a href="#">
+              <a href="/">
                 <FontAwesomeIcon icon={faFacebookSquare} />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="/">
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="/">
                 <FontAwesomeIcon icon={faPinterest} />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="/">
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
             </li>

@@ -1,7 +1,6 @@
 .bannerContainer {
   background-color: white;
   padding: 6em 0;
-  overflow: hidden;
 
   .bannerGrid {
     display: grid;
@@ -11,6 +10,7 @@
   }
 
   .imageContainer {
+    overflow: hidden;
     img {
       object-fit: contain;
     }
@@ -31,6 +31,28 @@
       color: var(--neutral2);
       margin: 0;
       margin-bottom: 2em;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .bannerContainer {
+    .bannerGrid {
+      grid-template-columns: 1fr;
+      grid-template-rows: 50% 1fr;
+    }
+
+    .imageContainer {
+      order: 1;
+    }
+
+    .callToAction {
+      order: 2;
+      text-align: center;
+
+      h1 {
+        font-size: 3rem;
+      }
     }
   }
 }
