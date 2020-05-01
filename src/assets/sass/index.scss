@@ -5,9 +5,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.aspect-ratio-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
 
 :root {

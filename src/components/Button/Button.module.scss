@@ -1,0 +1,28 @@
+button {
+  background-color: var(--primary-light);
+  position: relative;
+  cursor: pointer;
+  border: 0;
+  padding: 0.75em 2em;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: white;
+
+  user-select: none;
+  outline: none;
+  overflow: hidden;
+
+  .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background-color: white;
+    transition: opacity 300ms ease-out;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}

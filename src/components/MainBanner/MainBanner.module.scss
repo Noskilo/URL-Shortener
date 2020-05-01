@@ -1,0 +1,36 @@
+.bannerContainer {
+  background-color: white;
+  padding: 6em 0;
+  overflow: hidden;
+
+  .bannerGrid {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    gap: 1em;
+    align-items: center;
+  }
+
+  .imageContainer {
+    img {
+      object-fit: contain;
+    }
+  }
+
+  .callToAction {
+    padding: 0 1em;
+
+    h1 {
+      font-size: 4rem;
+      line-height: 4.5rem;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    p {
+      font-weight: 500;
+      color: var(--neutral2);
+      margin: 0;
+      margin-bottom: 2em;
+    }
+  }
+}

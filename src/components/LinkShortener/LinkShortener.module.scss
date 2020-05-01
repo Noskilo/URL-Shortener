@@ -1,0 +1,27 @@
+.container {
+  background-color: var(--primary-dark);
+  background-image: url("../../assets/images/bg-shorten-desktop.svg");
+  padding: 2em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.4em;
+  width: 80%;
+
+  form {
+    display: flex;
+
+    input {
+      flex: 1;
+      border: 0;
+      border-radius: 0.4em;
+      outline: none;
+      padding: 0 1.25em;
+    }
+
+    button {
+        margin-left: 1em;
+    }
+  }
+}

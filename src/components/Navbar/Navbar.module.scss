@@ -1,0 +1,48 @@
+.navContainer {
+  height: 4rem;
+  width: 100%;
+  padding: 0 1em;
+  display: flex;
+  align-items: center;
+
+  .link {
+    color: var(--neutral1);
+    transition: color 300ms ease;
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  button.link {
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+  }
+
+  .navLinks {
+    flex: 1;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+
+    li {
+      margin-right: 1rem;
+    }
+  }
+
+  .authButtons {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    width: 12rem;
+    justify-content: space-around;
+  }
+}

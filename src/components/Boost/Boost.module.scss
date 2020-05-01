@@ -1,0 +1,13 @@
+.container {
+  background-color: var(--primary-dark);
+  background-image: url("../../assets/images/bg-boost-desktop.svg");
+  text-align: center;
+  padding: 3em;
+
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1em;
+  }
+}
