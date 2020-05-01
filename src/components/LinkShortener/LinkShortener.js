@@ -7,7 +7,11 @@ function LinkShortener() {
     <div style={{ position: "relative" }}>
       <div className={styles.container}>
         <form>
-          <input type="text" placeholder="Shorten a link here..." />
+          <input
+            aria-label="Link to shorten"
+            type="text"
+            placeholder="Shorten a link here..."
+          />
           <Button type="submit">Shorten It!</Button>
         </form>
       </div>

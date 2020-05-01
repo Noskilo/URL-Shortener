@@ -14,7 +14,7 @@ function Footer() {
     <footer>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <img src={Logo} />
+          <img src={Logo} alt="Shortly" />
         </div>
         <div className={styles.linkColumn}>
           <h1>Features</h1>
