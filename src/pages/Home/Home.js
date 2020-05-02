@@ -6,6 +6,7 @@ import LinkShortener from "../../components/LinkShortener/LinkShortener";
 import AdvancedStatistics from "../../components/AdvancedStatistics/AdvancedStatistics";
 import Boost from "../../components/Boost/Boost";
 import Footer from "../../components/Footer/Footer";
+import { ShortLinksProvider } from "../../providers/ShortLinksProvider";
 
 function Home() {
   return (
@@ -13,8 +14,12 @@ function Home() {
       <Navbar />
       <main>
         <MainBanner />
-        <LinkShortener />
-        <AdvancedStatistics />
+
+        <ShortLinksProvider>
+          <LinkShortener />
+          <AdvancedStatistics />
+        </ShortLinksProvider>
+
         <Boost />
       </main>
       <Footer />

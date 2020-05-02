@@ -3,10 +3,11 @@ import styles from "./Button.module.scss";
 
 function Button(props) {
   return (
-    <button
+    <button onClick={props.onClick}
       style={{
         fontSize: props.fontSize,
         borderRadius: props.rounded ? "2em" : "0.4em",
+        backgroundColor: props.color
       }}
       type={props.type ? props.type : "button"}
     >

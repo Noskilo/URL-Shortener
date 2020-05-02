@@ -15,13 +15,40 @@
   form {
     display: flex;
 
-    input {
+    .inputContainer {
       flex: 1;
+      position: relative;
+
+      .errorMessage {
+        color: var(--secondary);
+        position: absolute;
+        bottom: -1.3rem;
+        left: 0;
+        font-size: 0.8rem;
+        font-style: italic;
+        font-weight: normal;
+      }
+    }
+
+    input {
+      width: 100%;
       border: 0;
       border-radius: 0.4em;
       outline: none;
       padding: 0 1.25em;
       height: 3rem;
+
+      &::placeholder {
+        opacity: 0.5;
+      }
+
+      &.visited:invalid {
+        border: 0.2em solid var(--secondary);
+
+        &::placeholder {
+          color: var(--secondary);
+        }
+      }
     }
 
     button {
@@ -37,7 +64,7 @@
 
     form {
       flex-direction: column;
-      input {
+      .inputContainer {
         flex: auto;
         margin-bottom: 3em;
       }

@@ -1,0 +1,51 @@
+.container {
+  background-color: white;
+  display: grid;
+  border-radius: 0.3em;
+  width: 100%;
+  align-items: center;
+
+  grid-template-columns: 1fr 1fr auto;
+
+  .destination {
+    padding: 1em;
+    text-align: start;
+    font-weight: bold;
+  }
+
+  .shortUrl {
+    padding: 1em;
+    text-align: right;
+    color: var(--primary-light);
+  }
+
+  .copy {
+    padding-right: 1em;
+    button {
+      min-width: 8em;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    .destination {
+      border-bottom: 2px solid var(--neutral1);
+    }
+
+    .shortUrl {
+      text-align: left;
+      color: var(--primary-light);
+    }
+
+    .copy {
+      padding: 0 1em;
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
