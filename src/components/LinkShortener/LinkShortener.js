@@ -45,7 +45,7 @@ function LinkShortener() {
       });
     } else {
       let headers = new Headers();
-      headers.append("apiKey", process.env.API_KEY);
+      headers.append("apiKey", process.env.REACT_APP_API_KEY);
       headers.append("content-type", "application/json");
 
       fetch("https://api.rebrandly.com/v1/links", {

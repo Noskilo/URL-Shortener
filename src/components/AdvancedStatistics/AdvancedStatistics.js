@@ -14,16 +14,10 @@ function AdvancedStatistics() {
     <div className={styles.container}>
       <ShortLinksConsumer>
         {(context) => {
-          if (context.shortLinks.length > 0 || true) {
+          if (context.shortLinks.length > 0) {
             return (
               <div className={styles.shortLinks}>
-                {[
-                  ...context.shortLinks,
-                  {
-                    destination: "https://google.com",
-                    shortUrl: "rebrand.ly/owodf",
-                  },
-                ].map((shortLink, index) => (
+                {context.shortLinks.reverse().map((shortLink, index) => (
                   <ShortLinkItem key={index} {...shortLink}></ShortLinkItem>
                 ))}
               </div>
