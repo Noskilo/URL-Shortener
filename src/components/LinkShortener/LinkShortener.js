@@ -27,6 +27,7 @@ function LinkShortener() {
 
   function shortenLink(event) {
     event.preventDefault();
+    const form = event.target;
     const inputLink = event.target.elements["link"];
 
     console.log(inputLink.validity);
@@ -43,6 +44,8 @@ function LinkShortener() {
         errorMessage,
         valid: false,
       });
+
+      inputLink.focus();
     } else {
       let headers = new Headers();
       headers.append("apiKey", process.env.REACT_APP_API_KEY);
@@ -59,13 +62,23 @@ function LinkShortener() {
       })
         .then((response) => response.json())
         .then((data) => {
-          context.setShortLinks([
-            ...context.shortLinks,
-            {
-              destination: data.destination,
-              shortUrl: data.shortUrl,
-            },
-          ]);
+          form.reset();
+          setLink({
+            value: "",
+            valid: true,
+            visited: false,
+            errorMessage: "",
+          });
+
+          const newShortLink = {
+            id: data.id,
+            destination: data.destination,
+            shortUrl: data.shortUrl,
+          };
+
+          window.localStorage.setItem(data.id, JSON.stringify(newShortLink));
+
+          context.setShortLinks([...context.shortLinks, newShortLink]);
         });
     }
   }

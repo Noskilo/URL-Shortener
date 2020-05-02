@@ -4,7 +4,12 @@ const ShortLinksContext = React.createContext();
 const ShortLinksConsumer = ShortLinksContext.Consumer;
 
 function ShortLinksProvider(props) {
-  const [shortLinks, setShortLinks] = useState([]);
+  const keys = Object.keys(localStorage);
+
+  const storedShortLinks = keys.map((key) =>
+    JSON.parse(localStorage.getItem(key))
+  );
+  const [shortLinks, setShortLinks] = useState(storedShortLinks);
 
   return (
     <ShortLinksContext.Provider value={{ shortLinks, setShortLinks }}>

@@ -17,7 +17,7 @@ function AdvancedStatistics() {
           if (context.shortLinks.length > 0) {
             return (
               <div className={styles.shortLinks}>
-                {context.shortLinks.reverse().map((shortLink, index) => (
+                {context.shortLinks.map((shortLink, index) => (
                   <ShortLinkItem key={index} {...shortLink}></ShortLinkItem>
                 ))}
               </div>
