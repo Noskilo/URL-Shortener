@@ -2,3 +2,8 @@
   padding-top: $vertical/$horizontal * 100%;
   position: relative;
 }
+
+@mixin container-limit() {
+  max-width: var(--desktop-width);
+  margin: 0 auto;
+}

@@ -1,4 +1,7 @@
+@import "assets/sass/mixins";
+
 .container {
+  @include container-limit;
   background-color: var(--primary-dark);
   background-image: url("../../assets/images/bg-shorten-desktop.svg");
   background-position: center;

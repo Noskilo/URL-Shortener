@@ -1,5 +1,12 @@
-.container {
+@import "assets/sass/mixins";
+
+.background {
   background-color: rgba(158, 154, 167, 0.2);
+}
+
+.container {
+  @include container-limit;
+
   padding-top: 5em;
   text-align: center;
 

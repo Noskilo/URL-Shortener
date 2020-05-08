@@ -1,4 +1,8 @@
+@import "assets/sass/mixins";
+
 .bannerContainer {
+  @include container-limit;
+  overflow: visible;
   background-color: white;
   padding: 8em 0;
 
