@@ -9,8 +9,10 @@ function IconCard(props) {
         <FontAwesomeIcon icon={props.icon} />
       </div>
 
-      <h2>{props.header}</h2>
-      <p>{props.children}</p>
+      <article>
+        <h2>{props.header}</h2>
+        <p>{props.children}</p>
+      </article>
     </div>
   );
 }
