@@ -26,7 +26,13 @@ function ShortLinkItem(props) {
       <div className={styles.destination}>{props.destination}</div>
 
       <div className={styles.shortUrl}>
-        <a href={`https://${props.shortUrl}`}>{props.shortUrl}</a>
+        <a
+          href={`https://${props.shortUrl}`}
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          {props.shortUrl}
+        </a>
       </div>
 
       <div className={styles.copy}>
