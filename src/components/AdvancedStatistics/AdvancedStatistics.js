@@ -11,7 +11,7 @@ import {
 
 function AdvancedStatistics() {
   return (
-    <div className={styles.background}>
+    <section className={styles.background}>
       <div className={styles.container}>
         <ShortLinksConsumer>
           {(context) => {
@@ -63,7 +63,7 @@ function AdvancedStatistics() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

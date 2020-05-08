@@ -5,7 +5,7 @@ import WorkingImage from "../../assets/images/illustration-working.svg";
 
 function MainBanner() {
   return (
-    <div className={styles.bannerContainer}>
+    <section className={styles.bannerContainer}>
       <div className={styles.bannerGrid}>
         <div className={styles.callToAction}>
           <h1>More than just shorter links</h1>
@@ -21,7 +21,7 @@ function MainBanner() {
           <img src={WorkingImage} alt="" />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

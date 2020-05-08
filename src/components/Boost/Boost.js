@@ -4,10 +4,12 @@ import Button from "../Button/Button";
 
 function Boost() {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <h1>Boost your links today</h1>
-      <Button rounded={true} fontSize="1rem">Get Started</Button>
-    </div>
+      <Button rounded={true} fontSize="1rem">
+        Get Started
+      </Button>
+    </section>
   );
 }
 

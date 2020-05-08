@@ -17,7 +17,11 @@
   .shortUrl {
     padding: 1em;
     text-align: right;
-    color: var(--primary-light);
+
+    a {
+      text-decoration: none;
+      color: var(--primary-light);
+    }
   }
 
   .copy {
@@ -39,7 +43,6 @@
 
     .shortUrl {
       text-align: left;
-      color: var(--primary-light);
     }
 
     .copy {

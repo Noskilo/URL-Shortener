@@ -25,9 +25,14 @@ function ShortLinkItem(props) {
     <div className={styles.container}>
       <div className={styles.destination}>{props.destination}</div>
 
-      <div className={styles.shortUrl}>{props.shortUrl}</div>
+      <div className={styles.shortUrl}>
+        <a href={`https://${props.shortUrl}`}>{props.shortUrl}</a>
+      </div>
+
       <div className={styles.copy}>
-        <Button onClick={copyUrl} color={copied ? "var(--primary-dark)" : null}>{copied ? "Copied!" : "Copy"}</Button>
+        <Button onClick={copyUrl} color={copied ? "var(--primary-dark)" : null}>
+          {copied ? "Copied!" : "Copy"}
+        </Button>
       </div>
     </div>
   );

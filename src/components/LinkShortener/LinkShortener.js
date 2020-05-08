@@ -84,7 +84,7 @@ function LinkShortener() {
   }
 
   return (
-    <div style={{ position: "relative" }}>
+    <section style={{ position: "relative" }}>
       <div className={styles.container}>
         <form onSubmit={shortenLink} noValidate>
           <div className={styles.inputContainer}>
@@ -107,7 +107,7 @@ function LinkShortener() {
           <Button type="submit">Shorten It!</Button>
         </form>
       </div>
-    </div>
+    </section>
   );
 }
 
